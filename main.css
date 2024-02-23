@@ -1,0 +1,179 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+    font-weight: 1000;
+}
+
+.parallax {
+    min-height: 100vh;
+    color: #FF8000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+
+#f1 {
+    background-image: url("img_parallax.jpg");
+}
+
+#p1 {
+    background-image: url("img_parallax_p1.jpg");
+}
+
+.paragrafy {
+    color:#FF8000;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+#logo_desktop{
+    display: block;
+    height: 50px;
+}
+
+#logo_mobile{
+    display:none;
+}
+
+body { 
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    z-index: 100;
+}
+#heady {
+    background-color: #FF8000;
+}
+/*.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+}*/
+.logo {
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #503000
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #000;
+    text-decoration: none;
+    margin-left: 2.5rem;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 2.8rem;
+    right: 5%;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%
+    }
+
+    .parallax {
+        background-image: url("img_parallax_mobile.jpg");
+
+        min-height: 1600px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    #logo_desktop{
+        display: none;
+    }
+    #logo_mobile{
+        display: block;
+        height: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo_desktop{
+        display: block;
+        height: 50px;
+    }
+    #logo_mobile{
+        display:none;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .navbar {
+        color: #FF8000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(10px);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+    #check:checked~.navbar{
+        height: 12.7rem;
+    }
+    .navbar a{
+        color: #FF8000;
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    .navbar a:hover{
+        color: #804000;
+    }
+
+}
