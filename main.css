@@ -9,8 +9,14 @@
     box-sizing: border-box;
     font-family: myFirstFont;
     font-weight: 1000;
+    scroll-behavior: smooth;
 }
-
+.logo:hover {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(17%) saturate(23%) hue-rotate(314deg) brightness(81%) contrast(104%) !important;
+}
+.logo{
+    filter: brightness(0) saturate(100%) invert(61%) sepia(51%) saturate(5520%) hue-rotate(3deg) brightness(105%) contrast(105%);
+}
 .parallax {
     min-height: 100vh;
     color: #FF8000;
@@ -63,23 +69,8 @@ body {
 #heady {
     background-color: #FF8000;
 }
-/*.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    z-index: -1;
-}*/
-.logo {
-    font-size: 2rem;
-    color: #000;
-    text-decoration: none;
-}
 .navbar a:hover{
-    color: #503000
+    color: #8f8f8f !important;
 }
 
 .navbar a {
@@ -105,17 +96,6 @@ body {
     .header {
         padding: 1.3rem 5%
     }
-
-    .parallax {
-        background-image: url("img_parallax_mobile.jpg");
-
-        min-height: 1600px;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: repeat;
-        background-size: cover;
-    }
     #logo_desktop{
         display: none;
     }
@@ -126,6 +106,9 @@ body {
 }
 
 @media (max-width: 700px) {
+    #f1{
+        background-image: url("img_parallax_mobile.jpg");
+    }
     #logo_desktop{
         display: block;
         height: 50px;
@@ -151,7 +134,6 @@ body {
     }
 
     .navbar {
-        color: #FF8000;
         position: absolute;
         top: 100%;
         left: 0;
@@ -162,18 +144,17 @@ body {
         transition: .3s ease;
         overflow: hidden;
     }
+    #navy{
+        color: #000;
+    }
     #check:checked~.navbar{
         height: 12.7rem;
     }
     .navbar a{
-        color: #FF8000;
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
-    }
-    .navbar a:hover{
-        color: #804000;
     }
 
 }
