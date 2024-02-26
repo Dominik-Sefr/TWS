@@ -11,12 +11,15 @@
     font-weight: 1000;
     scroll-behavior: smooth;
 }
+
 .logo:hover {
     filter: brightness(0) saturate(100%) invert(67%) sepia(17%) saturate(23%) hue-rotate(314deg) brightness(81%) contrast(104%) !important;
 }
-.logo{
+
+.logo {
     filter: brightness(0) saturate(100%) invert(61%) sepia(51%) saturate(5520%) hue-rotate(3deg) brightness(105%) contrast(105%);
 }
+
 .parallax {
     min-height: 100vh;
     color: #FF8000;
@@ -28,30 +31,89 @@
 }
 
 #f1 {
-    background-image: url("img_parallax.jpg");
+    background-image: url("img/img_parallax.jpg");
 }
 
 #p1 {
-    background-image: url("img_parallax_p1.jpg");
+    background-image: url("img/img_parallax_p1.jpg");
+}
+
+#indy {
+    background-image: url("img/img_parallax_indy.jpg");
+}
+
+#gtr {
+    background-image: url("img/img_parallax_gtr.jpg");
+    min-height: 100vh;
 }
 
 .paragrafy {
-    color:#FF8000;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(10px);
-    z-index: 100;
+    color: #FF8000;
+    z-index: 50;
+    position: absolute;
+    height: 95vh;
+    right: 0;
+    min-width: 0;
+    width: 0;
+    transition: .3s ease;
+}
+#p1-check{
+    display: none;
+}
+#f1-check{
+    display: none;
+}
+#p1-paragraf{
+    color:#ddd;
+}
+#gtr-paragraf{
+    color: #c9dfec;
+}
+#indy-paragraf{
+    color: #000;
+}
+.paragraf-icon{
+    color:#ff8000;
+    position: relative;
+    top: 50vh;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: .3s ease;
+}
+#left{
+    display:none;
+}
+#f1-check:checked~.paragrafy{
+    width: 45vh;
+}
+#f1-check:checked~.paragraf-icon #right{
+    display: none;
+}
+#f1-check:checked~.paragraf-icon #left{
+    display: block;
+    left: 40vh;
+}
+#f1-check:checked~.paragraf-icon{
+    left: 45vh;
 }
 
-#logo_desktop{
+.text {
+    position:relative;
+    top:40%;
+}
+
+#logo_desktop {
     display: block;
     height: 50px;
 }
 
-#logo_mobile{
-    display:none;
+#logo_mobile {
+    display: none;
 }
 
-body { 
+body {
     min-height: 100vh;
 }
 
@@ -62,14 +124,16 @@ body {
     width: 100%;
     padding: 1.3rem 10%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
+
 #heady {
     background-color: #FF8000;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: #8f8f8f !important;
 }
 
@@ -96,32 +160,44 @@ body {
     .header {
         padding: 1.3rem 5%
     }
-    #logo_desktop{
+
+    #logo_desktop {
         display: none;
     }
-    #logo_mobile{
+
+    #logo_mobile {
         display: block;
         height: 50px;
     }
 }
 
 @media (max-width: 700px) {
-    #f1{
-        background-image: url("img_parallax_mobile.jpg");
+    #f1 {
+        background-image: url("img/img_parallax_mobile.jpg");
     }
-    #logo_desktop{
+
+    #p1 {
+        background-image: url("img/img_parallax_p1_mobile.jpg");
+    }
+
+    #indy {
+        background-image: url("img/img_parallax_indy_mobile.jpg");
+    }
+
+    #logo_desktop {
         display: block;
         height: 50px;
     }
-    #logo_mobile{
-        display:none;
+
+    #logo_mobile {
+        display: none;
     }
 
     .icons {
         display: inline-flex;
     }
 
-    #check:checked~.icons #menu-icon{
+    #check:checked~.icons #menu-icon {
         display: none;
     }
 
@@ -129,7 +205,7 @@ body {
         display: none;
     }
 
-    #check:checked~.icons #close-icon{
+    #check:checked~.icons #close-icon {
         display: block;
     }
 
@@ -141,16 +217,19 @@ body {
         height: 0;
         background: rgba(0, 0, 0, .1);
         backdrop-filter: blur(10px);
-        transition: .3s ease;
+        transition: height .3s ease;
         overflow: hidden;
     }
-    #navy{
+
+    #navy {
         color: #000;
     }
-    #check:checked~.navbar{
+
+    #check:checked~.navbar {
         height: 12.7rem;
     }
-    .navbar a{
+
+    .navbar a {
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
