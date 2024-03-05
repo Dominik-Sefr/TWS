@@ -19,7 +19,7 @@ window.onload = function () {
         changeclasscolor(uiElements, '#ff8000');        
       }
       else{
-        changeclassfilter(logo, 'brightness(0) saturate(100%) invert(61%) sepia(51%) saturate(5520%) hue-rotate(3deg) brightness(105%) contrast(105%)');
+        changeclassfilter(logo, 'invert(51%) sepia(32%) saturate(3182%) hue-rotate(1deg) brightness(104%) contrast(105%)');
         heady.style.backgroundColor = '#00000001';
         heady.style.backdropFilter = 'blur(5px)';
         changeclasscolor(uiElements, '#ff8000');
@@ -33,7 +33,7 @@ window.onload = function () {
         changeclasscolor(uiElements, '#ddd');
       }
       else{
-        changeclassfilter(logo, 'brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(1147%) hue-rotate(203deg) brightness(92%) contrast(96%)');
+        changeclassfilter(logo, 'invert(98%) sepia(2%) saturate(77%) hue-rotate(49deg) brightness(110%) contrast(73%)');
         heady.style.backgroundColor = '#00000001';
         heady.style.backdropFilter = 'blur(5px)';
         changeclasscolor(uiElements, '#ddd');

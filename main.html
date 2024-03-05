@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="main.css">
     <title>McLaren</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <link rel="icon" href="img/icon.svg">
 </head>
 
@@ -17,10 +17,10 @@
     <div class="test">
         <header class="header" id="heady">
             <a href="#">
-                <img src="img/img_header.svg" id="logo_desktop" class="logo" />
-                <img src="img/img_header_mobile.svg" id="logo_mobile" class="logo" />
+                <img src="img/img_header.svg" id="logo_desktop" class="logo" alt="logo">
+                <img src="img/img_header_mobile.svg" id="logo_mobile" class="logo" alt="logo_tablet">
             </a>
-            <input type="checkbox" id="check" />
+            <input type="checkbox" id="check">
             <label for="check" class="icons">
                 <i class='bx bx-menu' id="menu-icon"></i>
                 <i class='bx bx-x' id="close-icon"></i>
@@ -34,211 +34,242 @@
         </header>
     </div>
     <div class="parallax" id="f1">
+        <div class="f1-table">
+            <h2>2023 McLaren results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Bahrain</th>
+                        <th>Saudi Arabia</th>
+                        <th>Australia</th>
+                        <th>Azerbaijan</th>
+                        <th>Miami</th>
+                        <th>Monaco</th>
+                        <th>Spain</th>
+                        <th>Canada</th>
+                        <th>Austria</th>
+                        <th>Great Britain</th>
+                        <th>Hungary</th>
+                        <th>Belgium</th>
+                        <th>Netherlands</th>
+                        <th>Italy</th>
+                        <th>Singapore</th>
+                        <th>Japan</th>
+                        <th>Qatar</th>
+                        <th>United States</th>
+                        <th>Mexico</th>
+                        <th>Brazil</th>
+                        <th>Las Vegas</th>
+                        <th>Abu Dhabi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Lando</th>
+                        <td rowspan="3" colspan="2">0</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>18</td>
+                        <td>18</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>18</td>
+                        <td>21</td>
+                        <td>23</td>
+                        <td>10</td>
+                        <td>26</td>
+                        <td>DNF</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>Oscar</th>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Constructors</th>
+                        <td>12</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>12</td>
+                        <td>30</td>
+                        <td>28</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>24</td>
+                        <td>33</td>
+                        <td>47</td>
+                        <td>23</td>
+                        <td>14</td>
+                        <td>26</td>
+                        <td>2</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="parallax" id="p1">
         <div>
-            <input type="checkbox" id="f1-check" />
-            <label for="f1-check" class="paragraf-icon">
-                <i class='bx bx-left-arrow' id="left"></i>
-                <i class='bx bx-right-arrow' id="right"></i>
+            <input type="checkbox" id="p1-check">
+            <label for="p1-check" class="paragraf-icon" id="p1-icon">
+                <i class='bx bx-left-arrow' id="left-p1"></i>
+                <i class='bx bx-right-arrow' id="right-p1"></i>
             </label>
-            <div class="paragrafy" id="f1-paragraf">
-                <div class="text">
-                    <h2>Welcome to Your Website!</h2>
-                    <p>This is where your main content will go. You can add text, images, videos, and more.</p>
+            <div class="paragrafy" id="p1-paragraf">
+                <div class="list">
+                    <h2 class="listH2">McLaren Automotive Cars</h2>
+                    <ul>
+                        <li>McLaren 650S
+                            <ul class="level2">
+                                <li>650S Spider (2014-2016)</li>
+                                <li>650S Le Mans (2015-2016)</li>
+                                <li>650S Can-AM (2015-2016)</li>
+                            </ul>
+                        </li>
+                        <li>McLaren 720S
+                            <ul class="level2">
+                                <li>720S (2017-2023)</li>
+                                <li>720S Spider (2018-2023)</li>
+                                <li>720S MSO Apex Collection (2019-2023)</li>
+                                <li>720S Le Mans special edition (2020-2023)</li>
+                            </ul>
+                        </li>
+                        <li>McLaren P1
+                            <ul class="level2">
+                                <li>P1 GTR (2015-2016)</li>
+                                <li>P1 MSO (2016-)</li>
+                                <li>P1 LM (2016-2017)</li>
+                                <li>P1 GTR-18 (2018)</li>
+                                <li>P1 Spider (2022)</li>
+                            </ul>
+                        </li>
 
-                    <h3>Subheading 1</h3>
-                    <p>This is a paragraph under the subheading.</p>
-
-                    <h3>Subheading 2</h3>
-                    <p>This is another paragraph under the subheading.</p>
-
-                    <h2>Main Section 2</h2>
-                    <p>This is another main section with paragraphs.</p>
-
-                    <h3>Subheading 3</h3>
-                    <p>This is a paragraph under the subheading in the second main section.</p>
-
-                    <h2>Lists Example</h2>
-                    <h3>Ordered List (Numbered)</h3>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="parallax" id="p1">
-        <input type="checkbox" id="p1-check" />
-        <label for="p1-check" class="paragraf-icon">
-            <i class='bx bx-left-arrow' id="left"></i>
-            <i class='bx bx-right-arrow' id="right"></i>
-        </label>
-        <div class="paragrafy" id="p1-paragraf">
-            <div class="text">
-                <h2>Welcome to Your Website!</h2>
-                <p>This is where your main content will go. You can add text, images, videos, and more.</p>
-
-                <h3>Subheading 1</h3>
-                <p>This is a paragraph under the subheading.</p>
-
-                <h3>Subheading 2</h3>
-                <p>This is another paragraph under the subheading.</p>
-
-                <h2>Main Section 2</h2>
-                <p>This is another main section with paragraphs.</p>
-
-                <h3>Subheading 3</h3>
-                <p>This is a paragraph under the subheading in the second main section.</p>
-
-                <h2>Lists Example</h2>
-                <h3>Ordered List (Numbered)</h3>
-            </div>
-        </div>
-    </div>
     <div class="parallax" id="indy">
-        <div class="paragrafy" id="indy-paragraf">
-            <div class="text">
-                <h2>Welcome to Your Website!</h2>
-                <p>This is where your main content will go. You can add text, images, videos, and more.</p>
+        <div>
+            <input type="checkbox" id="indy-check">
+            <label for="indy-check" class="paragraf-icon" id="indy-icon">
+                <i class='bx bx-left-arrow' id="left-indy"></i>
+                <i class='bx bx-right-arrow' id="right-indy"></i>
+            </label>
+            <div class="paragrafy" id="indy-paragraf">
+                <div class="text">
+                    <h1 style="text-align: center;">IndyCar</h1>
+                    <p>McLaren does compete in Indycar under name Arrow McLaren</p>
 
-                <h3>Subheading 1</h3>
-                <p>This is a paragraph under the subheading.</p>
+                    <h2 style="text-align: center;">Season 2023</h2>
+                    <p>McLaren ended on 8th position</p>
 
-                <h3>Subheading 2</h3>
-                <p>This is another paragraph under the subheading.</p>
+                    <h3>Pato O'Ward</h3>
+                    <p>One of 3 drivers for Arrow McLaren. Ended on 4th position</p>
 
-                <h2>Main Section 2</h2>
-                <p>This is another main section with paragraphs.</p>
+                    <h3>Felix Rosenqvist</h3>
+                    <p>Ended up on 12th position</p>
 
-                <h3>Subheading 3</h3>
-                <p>This is a paragraph under the subheading in the second main section.</p>
-
-                <h2>Lists Example</h2>
-                <h3>Ordered List (Numbered)</h3>
+                    <h3>Alexander Rossi</h3>
+                    <p>Ended up on 9th position</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="parallax" id="gtr">
+        <input type="checkbox" id="gtr-check">
+        <label for="gtr-check" class="paragraf-icon" id="gtr-icon">
+            <i class='bx bx-left-arrow' id="left-gtr"></i>
+            <i class='bx bx-right-arrow' id="right-gtr"></i>
+        </label>
         <div class="paragrafy" id="gtr-paragraf">
-            <div class="text">
-                <h2>Welcome to Your Website!</h2>
-                <p>This is where your main content will go. You can add text, images, videos, and more.</p>
-
-                <h3>Subheading 1</h3>
-                <p>This is a paragraph under the subheading.</p>
-
-                <h3>Subheading 2</h3>
-                <p>This is another paragraph under the subheading.</p>
-
-                <h2>Main Section 2</h2>
-                <p>This is another main section with paragraphs.</p>
-
-                <h3>Subheading 3</h3>
-                <p>This is a paragraph under the subheading in the second main section.</p>
-
-                <h2>Lists Example</h2>
-                <h3>Ordered List (Numbered)</h3>
+            <div class="list">
+                <h2 class="listH2">McLaren on 24H Le Mans</h2>
+                <ol>
+                    <li>1995
+                        <ol>
+                            <li>#51 - McLaren F1 GTR</li>
+                            <li>#59 - McLaren F1 GTR</li>
+                            <li>#50 - McLaren F1 GTR</li>
+                        </ol>
+                    </li>
+                    <li>1996
+                        <ol>
+                            <li>#38 - McLaren F1 GTR</li>
+                            <li>#39 - McLaren F1 GTR</li>
+                            <li>#40 - McLaren F1 GTR</li>
+                            <li>#41 - McLaren F1 GTR</li>
+                            <li>#44 - McLaren F1 GTR</li>
+                        </ol>
+                    </li>
+                    <li>1997
+                        <ol>
+                            <li>#42 - McLaren F1 GTR</li>
+                            <li>#43 - McLaren F1 GTR</li>
+                            <li>#44 - McLaren F1 GTR</li>
+                        </ol>
+                    </li>
+                    <li>2015
+                        <ol>
+                            <li>#51 - McLaren P1 GTR</li>
+                            <li>#85 - McLaren P1 GTR</li>
+                        </ol>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
-
-
-    <ol>
-        <li>First item
-            <ol>
-                <li>Sub-item 1</li>
-                <li>Sub-item 2</li>
-            </ol>
-        </li>
-        <li>Second item</li>
-        <li>Third item
-            <ol>
-                <li>Sub-item 1</li>
-                <li>Sub-item 2</li>
-            </ol>
-        </li>
-        <li>Fourth item</li>
-        <li>Fifth item</li>
-        <li>Sixth item</li>
-        <li>Seventh item</li>
-    </ol>
-
-    <h3>Unordered List (Not Numbered)</h3>
-    <ul>
-        <li>Red
-            <ul>
-                <li>Dark Red</li>
-                <li>Light Red</li>
-            </ul>
-        </li>
-        <li>Green</li>
-        <li>Blue
-            <ul>
-                <li>Dark Blue</li>
-                <li>Light Blue</li>
-            </ul>
-        </li>
-        <li>Yellow</li>
-        <li>Orange</li>
-        <li>Purple</li>
-        <li>Black</li>
-    </ul>
-
-    <!-- Tabulka s popiskem a záhlavím -->
-    <h2>Table Example</h2>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="2">Monthly Expenses</th>
-            </tr>
-            <tr>
-                <th>Category</th>
-                <th>Amount</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Food</td>
-                <td>$300</td>
-            </tr>
-            <tr>
-                <td>Utilities</td>
-                <td>$150</td>
-            </tr>
-            <tr>
-                <td>Transportation</td>
-                <td>$200</td>
-            </tr>
-            <tr>
-                <td>Entertainment</td>
-                <td>$100</td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center; font-weight: bold;">Total: $750</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Formulář s fieldset, legend a label -->
-    <h2>Form Example</h2>
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea>
-            </div>
-        </fieldset>
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-    </form>
     <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <form class="form-container">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div id="form-left">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div id="form-right">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+        <p id="footer-text">&copy; 2024 Dominik Sefr. <a href="https://www.mclaren.com/" target="_blank">McLaren Sites</a></p>
     </footer>
 </body>
 

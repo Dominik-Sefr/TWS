@@ -13,11 +13,11 @@
 }
 
 .logo:hover {
-    filter: brightness(0) saturate(100%) invert(67%) sepia(17%) saturate(23%) hue-rotate(314deg) brightness(81%) contrast(104%) !important;
+    filter: invert(62%) sepia(8%) saturate(19%) hue-rotate(6deg) brightness(90%) contrast(89%) !important;
 }
 
 .logo {
-    filter: brightness(0) saturate(100%) invert(61%) sepia(51%) saturate(5520%) hue-rotate(3deg) brightness(105%) contrast(105%);
+    filter: invert(51%) sepia(32%) saturate(3182%) hue-rotate(1deg) brightness(104%) contrast(105%);
 }
 
 .parallax {
@@ -27,7 +27,95 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -100;
+    position: relative;
+}
+
+a {
+    color: #ff8000;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #c9dfec;
+    color: #000;
+    padding: 4px;
+}
+#footer-text{
+    text-align: end;
+    align-self: flex-end;
+}
+
+.form-container {
+    display: flex;
+}
+
+fieldset{
+    border: none;
+}
+
+button[type="submit"] {
+    color: #000;
+    background-color: #ff8000;
+    border-radius: 6px;
+    padding: 3px;
+}
+#name, #email, #message{
+    background-color: #ff8000;
+    color: #000;
+    border-radius: 6px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr>th:first-child,tr>td:first-child {
+    position: sticky;
+    left: 0;
+  }
+
+th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #FF8000;
+    color: #000;
+}
+
+.f1-table {
+    position: absolute;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    bottom: 0;
+    color: #FF8000;
+    background-color: #00000001;
+    backdrop-filter: blur(10px);
+    scrollbar-color: #FF8000 black;
+    scrollbar-width: thin;
+    text-align: center;
+}
+
+.list {
+    position: absolute;
+    top: 30vh;
+}
+
+.listH2 {
+    text-align: center;
+    padding: 20px;
+}
+
+ul,
+ol {
+    all: revert;
+}
+
+ul li {
+    list-style-type: disc;
+    display: list-item;
+}
+
+ol li {
+    list-style-type: decimal;
 }
 
 #f1 {
@@ -53,55 +141,153 @@
     color: #FF8000;
     z-index: 50;
     position: absolute;
-    height: 95vh;
+    height: 100%;
     right: 0;
-    min-width: 0;
     width: 0;
     transition: .3s ease;
-}
-#p1-check{
-    display: none;
-}
-#f1-check{
-    display: none;
-}
-#p1-paragraf{
-    color:#ddd;
-}
-#gtr-paragraf{
-    color: #c9dfec;
-}
-#indy-paragraf{
-    color: #000;
-}
-.paragraf-icon{
-    color:#ff8000;
-    position: relative;
-    top: 50vh;
-    cursor: pointer;
-    font-size: 4rem;
-    transition: .3s ease;
-}
-#left{
-    display:none;
-}
-#f1-check:checked~.paragrafy{
-    width: 45vh;
-}
-#f1-check:checked~.paragraf-icon #right{
-    display: none;
-}
-#f1-check:checked~.paragraf-icon #left{
-    display: block;
-    left: 40vh;
-}
-#f1-check:checked~.paragraf-icon{
-    left: 45vh;
+    overflow: hidden;
 }
 
+.paragraf-icon {
+    color: #ff8000;
+    position: absolute;
+    top: 50vh;
+    cursor: pointer;
+    right: 0;
+    font-size: 4rem;
+    transition: .3s ease;
+    overflow: hidden;
+    z-index: 51;
+}
+
+#p1-check {
+    display: none;
+}
+
+#f1-check {
+    display: none;
+}
+
+#indy-check {
+    display: none;
+}
+
+#gtr-check {
+    display: none;
+}
+
+#p1-paragraf {
+    color: #ddd;
+}
+
+#gtr-paragraf {
+    color: #c9dfec;
+}
+
+#indy-paragraf {
+    color: #000;
+}
+
+#f1-icon:hover {
+    color: #8f8f8f;
+    transition: 0s;
+}
+
+#p1-icon:hover {
+    color: #8f8f8f;
+    transition: 0s;
+}
+
+#indy-icon:hover {
+    color: #8f8f8f;
+    transition: 0s;
+}
+
+#gtr-icon:hover {
+    color: #8f8f8f;
+    transition: 0s;
+}
+
+#f1-icon {
+    color: #FF8000;
+}
+
+#p1-icon {
+    color: #ddd;
+}
+
+#indy-icon {
+    color: #000;
+}
+
+#gtr-icon {
+    color: #c9dfec;
+}
+
+#right-p1, #right-gtr, #right-indy {
+    display: none;
+    overflow: hidden;
+}
+
+#p1-check:checked~.paragrafy {
+    width: 50vh;
+}
+
+#p1-check:checked~.paragraf-icon #right-p1 {
+    display: block;
+}
+
+#p1-check:checked~.paragraf-icon #left-p1 {
+    display: none;
+}
+
+#p1-check:checked~.paragraf-icon {
+    right: 50vh;
+}
+
+
+#indy-check:checked~.paragrafy {
+    width: 50vh;
+}
+
+#indy-check:checked~.paragraf-icon #right-indy {
+    display: block;
+}
+
+#indy-check:checked~.paragraf-icon #left-indy {
+    display: none;
+}
+
+#indy-check:checked~.paragraf-icon {
+    right: 50vh;
+}
+
+
+#gtr-check:checked~.paragrafy {
+    width: 50vh;
+}
+
+#gtr-check:checked~.paragraf-icon #right-gtr {
+    display: block;
+}
+
+#gtr-check:checked~.paragraf-icon #left-gtr {
+    display: none;
+}
+
+#gtr-check:checked~.paragraf-icon {
+    right: 50vh;
+}
+h2{
+    margin-top: 12px;
+}
+h3{
+    margin-top: 8px;
+}
 .text {
-    position:relative;
-    top:40%;
+    position: relative;
+    padding: 6px;
+    top: 30vh;
 }
 
 #logo_desktop {
@@ -142,6 +328,7 @@ body {
     color: #000;
     text-decoration: none;
     margin-left: 2.5rem;
+
 }
 
 #check {
